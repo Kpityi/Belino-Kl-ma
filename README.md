@@ -1,2 +1,2 @@
-# Belino-Kl-ma
+# Belino-Klima
 Klímák telepítése, karbantartása
