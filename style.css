@@ -4,21 +4,25 @@ body{
   background-size: cover;
 }
 .logo-index{
-  max-width: 500px;
+  max-width: 50vw;
   display: block;
   margin: 2rem auto 
 }
 .slideshow{
   display: block;
-  max-width: 800px;
+  max-width: 60vw;
   margin: 50px auto;
   border: 1px solid darkgray;
   box-shadow: 2px 2px 10px black;
 }
+main{
+  min-height: 55vw;
+  margin-bottom: 15vw;
+}
 footer{
-  min-width: 100%;
+  /* min-width: 100%;
   position: fixed;
-  bottom: 0;
+  bottom: 0; */
   white-space: wrap;
 }
 footer .container-fluid{
@@ -33,9 +37,12 @@ footer a, a:hover, a:active{
   cursor: pointer;
 }
 footer img{
-  max-width: 150px;
+  max-width: 10rem;
+  margin-bottom: 1rem;
 }
-
+.map{
+  width: 500px
+}
 /* ********************************************************  C O O K I E   C S S  ************************************************************* */
 
 .cookie-container{
@@ -74,3 +81,34 @@ footer img{
     margin-bottom: 2rem;
   }
   /* ********************************************************  C O O K I E   C S S  ********************************************************** */
+  
+  @media screen and (max-width: 490px ) {
+    footer img{
+      display: block;
+      margin: 0 1rem 1rem auto;
+    }
+    main{
+      min-height: 150vw;
+    }
+    .slideshow{
+      margin-top:20vw;
+      min-width: 80%;
+    }
+    .map{
+      width: 80%
+
+    }
+  }
+  @media screen and (max-width: 600px ){
+    main{
+      min-height:150vw;
+    }
+    .contact-item{
+      display: block;
+      min-width: 500px;
+      text-align: left;
+    }
+    .map{
+      width:80%
+    }
+  }
